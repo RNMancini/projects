@@ -1,0 +1,47 @@
+font-family: 'Metamorphous', cursive;
+
+body {
+    padding:  8px;
+    font-family: 'Metamorphous', cursive; 
+    Background: ;
+    
+}
+a {
+    text-shadow: 4px;
+    
+}
+
+#all, #online, #offline {
+    width: 100%;
+}
+
+.res {
+  padding: 5px 10px;
+  border: 4px solid;
+  border-radius: 15px;
+ }
+  
+  .res .row:hover {
+  background: #ffa9a0;
+  color: #C82647;
+  border-color: #C82647; }
+
+.res .row:hover img {
+  border-color: #C82647; }
+
+.res .row {
+  margin: 8px 2px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 6px; }
+
+.logo img {
+  height: 50%;
+  width: 50%;
+  border: 2px solid blue; }
+
+.name {
+  margin-left: 15px; }
+
+#statusdescription {
+  padding: 10px 1px; }
