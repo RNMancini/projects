@@ -1,0 +1,24 @@
+var hotel = { 
+occupied_rooms: '10',
+amenities: "heat",
+totalRooms: '80',
+
+availableRooms: function() {
+if (this.occupied_rooms < 1)
+then return (this.totalRooms);
+if (this.occupied_rooms > 1) then
+return (this.totalRooms - this.occupied_rooms);
+},
+
+bookRoom: function() {
+if (this.occupied_rooms > 1) 
+then return 
+(this.totalRooms - this.occupied_rooms) 
+},
+
+relinquishARoom: function() { 
+if (this.occupied_rooms - 1) 
+return 
+(this.totalRooms - (this.occupied_rooms - 1))
+}
+};
