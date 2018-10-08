@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+           //color and alert
+            function color(color) {
+                document.forms[0].myInput.style.background = color;
+            }
+           function alertFunction()  {
+               alert("Might we suggest Goggle?");
+           }
+            
+        </script>
+    </head>
+    <body>
+        //mouse moves
+<p onmouseover="style.color='white'" onmouseout="style.color='black'">
+            <form>
+            What would you like to find?<br>
+            <input type="text"
+            onkeyup="color('blue')"
+            onkeydown="color('yellow')"
+            onkeypress="alertFunction"
+            name="myInput">
+        </form>
+   </p>
+    </body>
+    <footer>
+        Brought to you today as an example of Keydown events. RNMancini
+    </footer>
+</html>
