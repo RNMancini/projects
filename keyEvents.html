@@ -9,7 +9,9 @@
            function alertFunction()  {
                alert("Might we suggest Goggle?");
            }
-            
+            onAClick(e){
+                console.log(e.target);
+            }
         </script>
     </head>
     <body>
@@ -23,6 +25,7 @@
             onkeypress="alertFunction"
             name="myInput">
         </form>
+        <button onClick={this.onAClick}>Don't click this button</button>
    </p>
     </body>
     <footer>
