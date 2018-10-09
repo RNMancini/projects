@@ -12,17 +12,22 @@
         <div id="app"></div>
         
         <script type="text/babel">
-            class App extends React.Component render() {
-                return(
+            class App extends React.Component {
+    state = {
+        name: 'Crystal',
+            age:35
+            }
+            render() {
+                return (
                     <div className="app-content">
                     <h1>Hey, ninjas</h1>
-                    </div>
+                    <p>My name is: { this.state.name } and I am { this.state.age }</p>
+                   </div>
                     )
             }
             }
-            }
             
-            ReactDO.render(<App />, document.getElementById('app'));
+            ReactDOM.render(<App />, document.getElementById('app'));
             
         </script>
     </body>
