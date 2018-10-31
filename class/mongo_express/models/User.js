@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Any = new Schema({ any: Schema.Type.Mixed });
+//const Any = new Schema({ any: Schema.Type.Mixed });
 
 const UserSchema = new Schema({
     name: {
@@ -14,32 +14,31 @@ const UserSchema = new Schema({
     },
     avatar: { type: String },
     date: { type: Date,
-        default: Date.now() }
-    }),
+        default: Date.now,
+        }
+    })
+// // const stockSchema = new Schema({
+//     symbol: {
+//         name: { type: String,
+//         unique: true,
+//         required: true,
+//     },
     
-const stockSchema = new Schema({
-    symbol: {
-        name: { type: String,
-        unique: true,
-        required: true,
-    },
+//     price: { type: Number },
     
-    price: { type: Number },
+//     open: { type: Boolean },
     
-    open: { type: Boolean },
+//     percentage: { type: Array },
     
-    percentage: { type: Array },
+//     currency: { type: String },
     
-    currency: { type: String },
+//     order: { type: [{
+//         orderID: { type: String },
+//         date: { type: Date, default: Date.now },
+//         symbol: { type: String }, 
+//     }]
+//     }
+//     }  //
     
-    order: { type: [{
-        orderID: { type: String },
-        date: { type: Date, default: Date.now },
-        symbol: { type: String }, 
-    }]
-    }
-    }
-    
-    
-}),    
+//}),    //
     module.exports = User = mongoose.model("users", UserSchema);
