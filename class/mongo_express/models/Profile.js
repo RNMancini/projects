@@ -23,6 +23,14 @@ const UserProfile = new Schema({
        password: {
            type: String,
            required: true
-    })
+       },
+       aboutMe: {
+           type: String
+       })
   
    module.exports = User = mongoose.model("users", UserSchema);
+   
+   
+   
+   
+   
